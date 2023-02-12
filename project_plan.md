@@ -1,4 +1,4 @@
-## Title: Ted Talk Rating Analysis
+# Title: Ted Talk Rating Analysis
 
 ## A brief summary.
 
@@ -10,7 +10,7 @@ There are quite a lot of dataset of TED talks in Kaggle. I am planning to look a
 
 [TED Talks dataset](https://www.kaggle.com/datasets/rounakbanik/ted-talks)
 
-## The ANALYSIS portion. Example points you should address: What is your end goal? What linguistic analysis do you have in mind? Any hypothesis you will be testing? Are you planning to do any predictive analysis (machine learning, classification, etc.), and using what methods?
+## The ANALYSIS portion. Example points you should address:
 
 The end goal of this project is to make a classifier that predicts the rating of a TED talk based on its description. Along with this, I am also planning to apply statistical methods on other aspects of the talks such as its duration, number of comments, its tags, etc. I do not have any hypothesis at this point, but I believe that there is a certain type of word that draws more attention to the talk or collects more positive ratings in the description. Also, I think the duration of talks is inversely related to the rating of the talk, but I am not very sure about this.
 

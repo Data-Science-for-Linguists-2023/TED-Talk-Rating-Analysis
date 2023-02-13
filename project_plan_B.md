@@ -28,5 +28,7 @@ I might have to do topic modeling for each songs in order to prove that the song
 
 The end goal of this project is to make two generative language models created based on the lyrics of the songs that are listed in the Billboard Hot 100 and compare the output of each model. In addition, as a side goal, I am planning to measure the frequency of words and see if there is any specific tendency in each period. I do not own any hypothesis at this moment, but the only point that I can assume for now is that the lyrics of more recent songs will describe women more agentive or active figure whereas that of older songs will depict women as somebody to be conquered by men.
 
+* The language models I mention here refer to the ones as Bigram Speak. (HW2, LING 1330)
+
 ## The PRESENTATION portion. 
 I am only considering power point at this moment with many plots such as histogram, barplot.

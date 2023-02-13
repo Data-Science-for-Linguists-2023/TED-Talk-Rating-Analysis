@@ -1,7 +1,7 @@
 # Project Plan B
 
 ## A working title.
-Music Lyric Analysis - focusing on thier view on women (if possible..)
+Billboard Song Lyric Analysis - focusing on thier view on women
 
 ## A brief summary.
 Just like other literature, or more than it does, songs reflect people's desire and how they view the world. Therefore, in this project, I will attempt to create two generative language models based on the lyrics of the songs that are on Billboard Hot 100 in order to find out how people's general perception of women has changed in the United States over the past 60 years. 

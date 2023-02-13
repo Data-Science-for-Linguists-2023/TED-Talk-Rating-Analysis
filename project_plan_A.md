@@ -1,4 +1,6 @@
-# Title: Ted Talk Rating Analysis
+# Project Plan A
+
+## Title: Ted Talk Rating Analysis
 
 ## A brief summary.
 

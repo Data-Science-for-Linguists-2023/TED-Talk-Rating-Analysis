@@ -4,7 +4,7 @@
 
 ## A brief summary.
 
-This project's main goal is to make a classifier of the rating of TED talks. Based on the description of each TED talk, the classifier will correctly predict the rating of TED talks. Also, this project aims to find if there is other elements that affects the rating of the talks such as its duration, number of comments, etc.
+This project's main goal is to make a classifier of the rating of TED talks. Based on the transcription of each TED talk, the classifier will correctly predict the rating of TED talks. Also, this project aims to find if there is other elements that affects the rating of the talks such as its duration, number of comments, etc.
 
 ## The DATA portion.
 
@@ -14,7 +14,7 @@ There are quite a lot of dataset of TED talks in Kaggle. I am planning to look a
 
 ## The ANALYSIS portion.
 
-The end goal of this project is to make a classifier that predicts the rating of a TED talk based on its description. Along with this, I am also planning to apply statistical methods on other aspects of the talks such as its duration, number of comments, its tags, etc. I do not have any hypothesis at this point, but I believe that there is a certain type of word that draws more attention to the talk or collects more positive ratings in the description. Also, I think the duration of talks is inversely related to the rating of the talk, but I am not very sure about this.
+The end goal of this project is to make a classifier that predicts the rating of a TED talk based on its transcription. Along with this, I am also planning to apply statistical methods on other aspects of the talks such as its duration, number of comments, its tags, etc. I do not have any hypothesis at this point, but I believe that there is a certain type of word that draws more attention to the talk or collects more positive ratings in the description. Also, I think the duration of talks is inversely related to the rating of the talk, but I am not very sure about this.
 
 ## The PRESENTATION portion. 
 Mostly tons of plots and tables.

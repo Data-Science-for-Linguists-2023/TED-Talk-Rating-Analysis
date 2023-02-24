@@ -130,3 +130,6 @@ dmypy.json
 
 # data
 data/
+
+# but not data_sample
+!data_sample/

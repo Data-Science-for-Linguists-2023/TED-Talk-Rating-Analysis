@@ -10,13 +10,13 @@
 
 1. Data Sharing Plan: I asked for an advice to Dr. Collister because I was not sure about its license. The person who uploaded the dataset on Kaggle specified its license as **CC BY-NC-SA 4.0**, but I was not confident if I can blindly believe this. Below is Dr. Colliester's comment regarding my question:
 
-    Right now TED talks are licensed under a CC-BY-NC-ND license according to their website.
+    _Right now TED talks are licensed under a CC-BY-NC-ND license according to their website._
 
-    I might suggest that you do one of these things if you’re very concerned about this: 
-    1.	Dive into the Wayback Machine to an archived version of TED.com from 2017 to check what the license on that website says at the time this dataset was collected (or as close as you can get). 
-    2.	Contact the author of the dataset to confirm that they have the right permissions to share these data. 
+    _I might suggest that you do one of these things if you’re very concerned about this:_
+    _1.	Dive into the Wayback Machine to an archived version of TED.com from 2017 to check what the license on that website says at the time this dataset was collected (or as close as you can get)._
+    _2.	Contact the author of the dataset to confirm that they have the right permissions to share these data._
 
-    Because the dataset is licensed under a friendly license right now, you can also make an argument that points back to this website with the original dataset, saying that it’s here and openly licensed, which would redirect any concerns back to the original dataset creator.
+    _Because the dataset is licensed under a friendly license right now, you can also make an argument that points back to this website with the original dataset, saying that it’s here and openly licensed, which would redirect any concerns back to the original dataset creator._
 
 
 So, now I know that their website stipulated that the data set is under a CC-BY-NC-ND license, I guess I can use and share (only a bit of it, of course) the data for my project, EXCEPT the data that I modified.

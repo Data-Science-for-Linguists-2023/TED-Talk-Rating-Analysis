@@ -27,4 +27,10 @@ So, now I know that their website stipulated that the data set is under a CC-BY-
     1. Finish making k-band and calculating sentence length of each transcript
         Also checked the relationship between the number of comments and k-band/sentence length repectively.
     2. Finish refining the 'ratings' column
-    3. 
+    3. Find a way to measure the popularity of each talk using rating column _(in progress)_
+
+3. 'Found' portion of the data:
+
+    1. It seems that _the number of comments_ and _average k-band_ has no correlation, unfortunately.
+    Should I change my hypothesis? Hmm..
+    2. Due to the disparity in the number of words that are considered positive or negative (positive: 10, negative: 4), it seems that it is going to be a little trickier that I expected to use _rating_ column to measure the popularity. I am not sure how I should reflect this difference.

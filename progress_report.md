@@ -5,3 +5,7 @@
 3. Merge two dataset by `url`, and sort out the columns I need.  
 4. Tokenize the transcript and remove puntuations _(in progress)_  
 5. Make K-band using `count_1w.txt` file. _(in progress)_  
+
+## 2nd Progress Report
+
+1. Data Sharing Plan:

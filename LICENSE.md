@@ -1,6 +1,6 @@
 # License of the codes in this repository
 
-You can do whatever you want. No need to give credit unless you want to.
+CC BY
 
 
 

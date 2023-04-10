@@ -34,3 +34,22 @@ So, now I know that their website stipulated that the data set is under a **CC-B
     1. It seems that _the number of comments_ and _average k-band_ has no correlation, unfortunately.
     Should I change my hypothesis? Hmm..
     2. Due to the disparity in the number of words that are considered positive or negative (positive: 10, negative: 4), it seems that it is going to be a little trickier that I expected to use _rating_ column to measure the popularity. I am not sure how I should reflect this difference.
+
+    ## 3rd Progress Report
+
+    1. Progress
+
+        1. Finish polishing the `rating` column
+
+        2. Finish testing my hypothesis (and sub-hypothesis too.)
+            * chose multinomial NB model and SVM to use.
+
+        3. Now the data is pretty much ready for the analysis.
+
+    2. Found portion of the data:
+
+        1. I checked the relationship between individual ratings and the related features of the transcript. Unlike what I expected, there was no relationship (or not a strong relationship) between k-band and `obnoxious`, abd between sentence length and `longwinded`.
+
+        2. Regarding my first hypothesis (It is possible to predict whether a talk is popular or not based on its transcript), I concluded that it is not possible to predict the popularity of a talk based on its transcript. I presume that there must be other elements that affect the popularity of the talks, and I believe those elements include nonverbal cues such as the tone, the body language, the facial expression, the delivery of the speaker.
+
+        3. I also contemplated `comments` and `views` as a measure of popularity, instead of ratings. I have checked the correlation between `comments` and tf-idf features, and there was no correlation at all. I am glad I chose `ratings` column as a criteria of popularity.

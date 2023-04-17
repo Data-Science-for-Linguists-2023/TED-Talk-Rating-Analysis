@@ -1,6 +1,6 @@
 # License of the codes in this repository
 
-CC BY
+CC BY 4.0
 
 
 

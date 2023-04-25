@@ -3,7 +3,7 @@
 **Soobin Choi | soc69@pitt.edu | 04/25/2023**
 
 ## Brief description about the project
-This project reveals the relationship between the popularity of a talk and its textual feature; if the popularity is solely based on the content of it or if there is other elements that determine the popularity, such as the speaker's delivery strategy, tone, word of choice, etc.
+This project reveals the relationship between the popularity of a talk and its textual feature; if the popularity is solely based on the content of it or if there are other elements that determine the popularity, such as the speaker's delivery strategy, tone, word of choice, etc.
 
 ## Directory
 

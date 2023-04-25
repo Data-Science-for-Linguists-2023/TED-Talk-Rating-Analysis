@@ -7,14 +7,15 @@
 (150~200 words)
 
 ## Main Hypothesis: it is possible to predict the popularity of a talk based on its transcript
-
+(350)
 
 ## Sub-hypothesis 1: the correlation between the k-band and the rating `obnoxious`
-
+(350)
 
 ## Sub-hypothesis 2: the correlatiob between the sentence length and the rating `longwinded`
-
+(350)
 
 ## Conclusion
 * What I have found
 * Future development regarding this data
+(200~300)

@@ -7,7 +7,10 @@ This project reveals the relationship between the popularity of a talk and its t
 
 ## Directory
 
-[Final Paper](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_paper.md)
+[`**Final Report**`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_paper.md) is the wrapped-up version of the project
+
+[`Ted_talk_Analysis`]()
+
 
 I have collected the original dataset from Kaggle [https://www.kaggle.com/datasets/rounakbanik/ted-talks], and it is under **CC BY-NC-SA 4.0**. 
 However, the website specifies that the TED Talks are under **CC-BY-NC-ND** license

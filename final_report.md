@@ -4,7 +4,7 @@
 ### Motivation and hypotheses
 The motivation for this project is straightforward: since TED talk was one of the main sources I used to learn English, I became curious when I saw a project in Kaggle.com, titled [*What Makes a Popular TED Talk?*](https://www.kaggle.com/code/holfyuen/what-makes-a-popular-ted-talk) I realized that I, without solid ground, assumed that it is the content that attracts people, and that it is the main source which the speech gains popularity from. Therefore, utilizing this project as an opportunity to check if my hasty assumption is valid, I intend to discover whether the actual content of talks is the main factor that determines the popularity of talks or not. As the project proceeds, it also seemed interesting to check the correlation between specific ratings and a couple of textual features, hence two sub-hypotheses are added as below:
 
-* There is a positive correlation between the rating `obnoxious` and the mean of [k-band](####-What-is-K-band?)
+* There is a positive correlation between the rating `obnoxious` and the mean of [k-band](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#what-is-k-band)
 
 * There is a positive correlation between the rating  `longwinded` and the mean length of sentence in the transcript
 

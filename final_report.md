@@ -1,4 +1,5 @@
 # Final Report: The application of text classification model to the public talk – TED Talk
+Soobin Choi | soc69@pittedu | 04/25/2023
 
 ## Introduction
 ### Motivation and hypotheses

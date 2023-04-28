@@ -31,12 +31,11 @@ Both datasets are under a [Creative Commons Attribution-NonCommercial-NoDerivati
 ## Main Hypothesis: it is possible to predict the popularity of a talk based on its transcript
 
 There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings
-
+--------------------------------------------------------------------------------
 |![ratrings](/images/ratings.png)      |      ![ratings2](/images/ratings2.png)|
 --------------------------------------------------------------------------------
-
 |*One example of ratings column, before cleaning*        |        *after cleaning*|
-
+---------------------------------------------------------------------------------
 Here, I have tried Multinomial Naive Bayes and Support Vector Machine (SVM), and interestingly enough, they demonstrated quite a different aspect. 
 
 ### Multinomial Naive Bayes

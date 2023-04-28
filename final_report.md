@@ -34,7 +34,7 @@ There are several columns that can be taken into account when to calculate the p
 
 ![ratrings](/images/ratings.png) ![ratings2](/images/ratings2.png)
 
-*One example of ratings column, before cleaning*    *after cleaning*
+*One example of ratings column, before cleaning*        *after cleaning*
 
 Here, I have tried Multinomial Naive Bayes and Support Vector Machine (SVM), and interestingly enough, they demonstrated quite a different aspect. 
 

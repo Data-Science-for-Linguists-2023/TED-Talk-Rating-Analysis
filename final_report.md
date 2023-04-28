@@ -35,7 +35,7 @@ Here, I have tried Multinomial Naive Bayes and Support Vector Machine (SVM), and
 
 ### Multinomial Naive Bayes
 
-![MultinomialNB_unigram](/TED-Talk-Rating-Analysis/images/multinomialNB_1gram.png)
+![MultinomialNB_unigram](/images/multinomialNB_1gram.png)
 
 ## Sub-hypothesis 1: the correlation between the k-band and the rating `obnoxious`
 (350)

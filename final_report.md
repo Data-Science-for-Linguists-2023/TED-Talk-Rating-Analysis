@@ -30,7 +30,9 @@ Both datasets are under a [Creative Commons Attribution-NonCommercial-NoDerivati
 
 ## Main Hypothesis: it is possible to predict the popularity of a talk based on its transcript
 
-There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings. In the case of one neutral rating, I did not add it up to neither positive nor negative.
+There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings. In the case of one neutral rating, I did not add it up to neither positive nor negative. After calculating the percentages, it shows that most of the talks are 
+
+![ratrings](/images/ratings.png) ![ratings2](/images/ratings3.png)
 
 *examples of ratings column, before cleaning and after cleaning*
 
@@ -40,9 +42,14 @@ Here, I have tried Multinomial Naive Bayes and Support Vector Machine (SVM), and
 
 ![MultinomialNB_unigram](/images/multinomialNB_1gram.png)
 
+### Support Vector Machine
+
+![SVM_unigram](/images/SVM_1gram1.png)
+
 ## Sub-hypothesis 1: the correlation between the k-band and the rating `obnoxious`
 (350)
 
+![]()
 ## Sub-hypothesis 2: the correlatiob between the sentence length and the rating `longwinded`
 (350)
 

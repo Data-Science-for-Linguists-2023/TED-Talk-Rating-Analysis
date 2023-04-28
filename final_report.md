@@ -24,17 +24,18 @@ K-band is one of the ways to measure the vocabulary level of a written language.
 ### About the dataset
 For this project, I used two datasets from [Kaggle](https://www.kaggle.com/datasets/rounakbanik/ted-talks), which are [`ted_main.csv`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/data_sample/ted_main_sample.csv), [`transcript.csv`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/data_sample/transcript_sample.csv). `ted_main.csv` file contains the general information of each talk, such as the title, the number of comments, the ratings they recieved, the url, and so on. `transcript.csv` file contains only two columns, which are the url, and the transcript. For my project, I simply merged two datasets by `url` column, and started data cleaning process from here. In the merged file,  there are 2544 talks, with 2.3 millions of tokens in total.
 
-
-HOW I DEFINED 'POPULARITY' HERE.: rating 열이 어떻게 구성되어있는지 설명.
-
-Another: you didn't report the dataset's SIZE! How many TED talks are included? How many utterances? Also, remember that corpus data sizes are presented in terms of # of words, that is, token counts. Are you dealing with 2 million words of speech, 4 mil, ...? Make sure to always report these figures... important!
-
 #### License
 Both datasets are under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/LICENSE.md#creative-commons-attribution-noncommercial-noderivatives-40-international-public-license).
 
 
 ## Main Hypothesis: it is possible to predict the popularity of a talk based on its transcript
-For the main hypothesis, I have 
+There are several columns that can be taken into account when to calculate the popularity of a talk. which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk.
+
+Here, I have tried Multinomial Naive Bayes and Support Vector Machine (SVM), and interestingly enough, they demonstrated quite a different aspect. 
+
+### Multinomial Naive Bayes
+
+![MultinomialNB_unigram](/TED-Talk-Rating-Analysis/images/multinomialNB_1gram.png)
 
 ## Sub-hypothesis 1: the correlation between the k-band and the rating `obnoxious`
 (350)

@@ -47,9 +47,12 @@ There is almost no difference at all in the case of unigram feature even though 
 
 ![MultinomialNB_unigram](/images/multinomialNB_ngram1.png)
 
-After changing the unigram feature to bigram feature, the performance of the model actually deteriorated. When using unigram feature, the model classified three true negative talks successfully. However, after adding bigram feature and increase the maximum feature number to 20000, the model did not label any single true negative talks as negative - it classified all the talks as positive. I am not sure if this result is due to the increase in the maximum feature number or due to the bigram features, but what we can conclude from here is that it is not possible to predict the popularity of a talk based on its transcript in the case where Multinomial Naive Bayes model is employed.
+After changing the unigram feature to bigram feature, the performance of the model actually deteriorated. When using unigram feature, the model classified three true negative talks successfully. However, after adding bigram feature and increase the maximum feature number to 20000, the model did not label any single true negative talks as negative - it classified all the talks as positive. I am not sure if this result is due to the increase in the maximum feature number or due to the bigram features, but what we can conclude from here is that it is not possible to predict the popularity of a talk based on its transcript in the case where multinomial Naive Bayes model is employed.
 
 ### Support Vector Machine
+
+When testing Support Vector Machine model, I have adjusted both maximum feature numbers and C parameter since both have a heavy influence in its performance. However, in this project, the maximum feature number did not affect the performance significantly while C parameter did.
+
 
 <img src="/images/SVM_1gram1.png"  width="430" height="360"> <img src="/images/SVM_1gram3.png"  width="430" height="360">
 

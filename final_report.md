@@ -51,13 +51,12 @@ The first machine learning model I tried for the classification is Multinomial N
 
 ### Support Vector Machine
 
-<img src="/images/SVM_1gram1.png"  width="300" height="150">
+<img src="/images/SVM_1gram1.png"  width="450" height="450">
 
-![SVM_unigram](/images/SVM_1gram2.png)
+<img src="/images/SVM_1gram3.png"  width="450" height="450">
 
-![SVM_unigram](/images/SVM_1gram3.png)
+<img src="/images/SVM_ngram.png"  width="450" height="450">
 
-![SVM_unigram](/images/SVM_ngram.png)
 
 ## Sub-hypothesis 1: the correlation between the k-band and the rating `obnoxious`
 (350)

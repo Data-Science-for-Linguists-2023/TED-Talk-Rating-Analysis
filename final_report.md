@@ -30,23 +30,24 @@ Both datasets are under a [Creative Commons Attribution-NonCommercial-NoDerivati
 
 ## Main Hypothesis: it is possible to predict the popularity of a talk based on its transcript
 
-There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings. In the case of one neutral rating, I did not add it up to neither positive nor negative. After calculating the percentages, it shows that most of the talks are positively skewed. Therefore, I labelled the talks based on the percentage of negative talks: if the percentage of negative rating is higher than the mean of negative percentage (8.12%), I labelled it as negative. Otherwise, I labelled it as positive.
+There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings. In the case of one neutral rating, I did not add it up to neither positive nor negative. After calculating the percentages, it shows that most of the talks are positively skewed. Therefore, I labelled the talks based on the percentage of negative ratings: if the percentage of negative ratings is higher than the mean of negative ratings percentage (8.12%), I labelled it as negative. Otherwise, I labelled it as positive. After finishing labeling, I calculated the base line, and it turned out to be 66%.
 
 ![ratrings](/images/ratings.png) ![ratings2](/images/ratings3.png)
 
 *examples of ratings column, before cleaning and after cleaning*
 
-Here, I have tried Multinomial Naive Bayes and Support Vector Machine (SVM), and interestingly enough, they demonstrated quite a different aspect. 
+Here, I have tried Multinomial Naive Bayes model and Support Vector Machine (SVM), and interestingly enough, they demonstrated quite a different aspect. 
 
 ### Multinomial Naive Bayes
-The first machine learning model I tried for the classification is Multinomial Naive Bayes. I first have set `max feature` number as 1500, then increased to 3000.
-
+The first machine learning model I tried for the classification is Multinomial Naive Bayes. I first have set `max feature` number as 1500, then increased to 3000 in the case of unigram feature. The results are as below.
 
 <img src="/images/multinomialNB_1gram.png"  width="430" height="360"> <img src="/images/multinomialNB_1gram2.png"  width="430" height="360">
 
+There is almost no difference at all in the case of unigram feature even though the max feature has been adjusted from 1500 to 3000. Both models labelled the majority of the talks as positive, which is not a surprise, considering the fact that the better part of the talks are already highly positively skewed. Since both models predicted that almost all of them are positively-rated talks, their performance does not show a big difference from the base line (69% and 70% respectively). Then I tried bigram feature, in the hope that giving more context by using bigram would enhance its performance. The result is as below.
+
 ![MultinomialNB_unigram](/images/multinomialNB_ngram1.png)
 
-
+After changing the unigram feature to bigram feature, the performance of the model deteriorated.
 
 ### Support Vector Machine
 

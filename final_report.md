@@ -41,9 +41,8 @@ Here, I have tried Multinomial Naive Bayes and Support Vector Machine (SVM), and
 ### Multinomial Naive Bayes
 The first machine learning model I tried for the classification is Multinomial Naive Bayes. I first have set `max feature` number as 1500, then increased to 3000.
 
-![MultinomialNB_unigram](/images/multinomialNB_1gram.png)
 
-![MultinomialNB_unigram](/images/multinomialNB_1gram2.png)
+<img src="/images/multinomialNB_1gram.png"  width="430" height="360"> <img src="/images/multinomialNB_1gram2.png"  width="430" height="360">
 
 ![MultinomialNB_unigram](/images/multinomialNB_ngram1.png)
 

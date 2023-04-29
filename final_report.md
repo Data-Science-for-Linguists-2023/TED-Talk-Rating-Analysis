@@ -51,11 +51,12 @@ The first machine learning model I tried for the classification is Multinomial N
 
 ### Support Vector Machine
 
-![SVM_unigram](/images/SVM_1gram1.png){width=15, height=15}
+![SVM_unigram](/images/SVM_1gram1.png)
+<img src="/images/SVM_1gram1.png"  width="30" height="15">
 
-![SVM_unigram](/images/SVM_1gram2.png){}
+![SVM_unigram](/images/SVM_1gram2.png)
 
-![SVM_unigram](/images/SVM_1gram3.png){}
+![SVM_unigram](/images/SVM_1gram3.png)
 
 ![SVM_unigram](/images/SVM_ngram.png)
 

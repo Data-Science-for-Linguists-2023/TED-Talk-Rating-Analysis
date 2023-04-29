@@ -43,11 +43,11 @@ The first machine learning model I tried for the classification is Multinomial N
 
 <img src="/images/multinomialNB_1gram.png"  width="430" height="360"> <img src="/images/multinomialNB_1gram2.png"  width="430" height="360">
 
-There is almost no difference at all in the case of unigram feature even though the max feature has been adjusted from 1500 to 3000. Both models labelled the majority of the talks as positive, which is not a surprise, considering the fact that the better part of the talks are already highly positively skewed. Since both models predicted that almost all of them are positively-rated talks, their performance does not show a big difference from the base line (69% and 70% respectively). Then I tried bigram feature, in the hope that giving more context by using bigram would enhance its performance. The result is as below.
+There is almost no difference at all in the case of unigram feature even though the max feature has been adjusted from 1500 to 3000. Both models labelled the majority of the talks as positive, which is not a surprise, considering the fact that the better part of the talks are already highly positively skewed. Since both models predicted that almost all of them are positively-rated talks, their performance does not show a big difference from the base line (69% and 70% respectively). Then I tried bigram feature, in the hope that giving more context by incorporating bigram feature would enhance its performance. The result is as below.
 
 ![MultinomialNB_unigram](/images/multinomialNB_ngram1.png)
 
-After changing the unigram feature to bigram feature, the performance of the model deteriorated.
+After changing the unigram feature to bigram feature, the performance of the model actually deteriorated. When using unigram feature, the model classified three true negative talks successfully. However, after adding bigram feature and increase the maximum feature number to 20000, the model did not label any single true negative talks as negative - it classified all the talks as positive. I am not sure if this result is due to the increase in the maximum feature number or due to the bigram features, but what we can conclude from here is that it is not possible to predict the popularity of a talk based on its transcript in the case where Multinomial Naive Bayes model is employed.
 
 ### Support Vector Machine
 

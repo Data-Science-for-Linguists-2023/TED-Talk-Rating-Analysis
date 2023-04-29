@@ -51,9 +51,7 @@ The first machine learning model I tried for the classification is Multinomial N
 
 ### Support Vector Machine
 
-<img src="/images/SVM_1gram1.png"  width="450" height="450">
-
-<img src="/images/SVM_1gram3.png"  width="450" height="450">
+<img src="/images/SVM_1gram1.png"  width="500" height="450"> <img src="/images/SVM_1gram3.png"  width="500" height="450">
 
 ![SVM Ngram](/images/SVM_ngram.png)
 

@@ -11,7 +11,7 @@ Soobin Choi | soc69@pitt.edu | 04/25/2023
 
 ## Introduction
 ### Motivation and hypotheses
-The motivation for this project is straightforward: since TED talk was one of the main sources I used to learn English, I became curious when I saw a project in Kaggle.com, titled [*What Makes a Popular TED Talk?*](https://www.kaggle.com/code/holfyuen/what-makes-a-popular-ted-talk) I realized that I, without solid ground, assumed that it is the lexical contents that attracts people, and that it is the main source which the speech gains popularity from. Therefore, taking this project as an opportunity to check if my hasty assumption is valid, I intend to discover ***whether the lexical contents of talks is the main factor that determines the popularity of talks or not***. As the project proceeds, it also seemed interesting to check the correlation between specific ratings and a couple of textual features, hence two sub-hypotheses are added as below:
+The motivation for this project is straightforward: since TED talk was one of the main sources I used to learn English, I became curious when I saw a project in Kaggle.com, titled [*What Makes a Popular TED Talk?*](https://www.kaggle.com/code/holfyuen/what-makes-a-popular-ted-talk) I realized that, without solid ground, I assumed that it is the lexical contents that attracts people, and that it is the main source which the speech gains popularity from. Therefore, taking this project as an opportunity to check if my hasty assumption is valid, I intend to discover ***whether it is possible to predict a talks popularity solely based on the lexical contents of it***. As the project proceeds, it also seemed interesting to check the correlation between specific ratings and a couple of textual features, hence two sub-hypotheses are added as below:
 
 * There is a positive correlation between the rating `obnoxious` and the mean of [k-band](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#what-is-k-band)
 
@@ -30,7 +30,7 @@ Both datasets are under a [Creative Commons Attribution-NonCommercial-NoDerivati
 
 ## Main Hypothesis: it is possible to predict the popularity of a talk based on its transcript
 
-There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings. In the case of one neutral rating, I did not add it up to neither positive nor negative. After calculating the percentages, it shows that most of the talks are highly positive. Therefore, I labelled the talks based on the percentage of negative talks: if the percentage of negative rating is lower than the mean of negative percentage (8.12%), I labelled it as negative. Otherwise, I labelled it as positive.
+There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings. In the case of one neutral rating, I did not add it up to neither positive nor negative. After calculating the percentages, it shows that most of the talks are positively skewed. Therefore, I labelled the talks based on the percentage of negative talks: if the percentage of negative rating is higher than the mean of negative percentage (8.12%), I labelled it as negative. Otherwise, I labelled it as positive.
 
 ![ratrings](/images/ratings.png) ![ratings2](/images/ratings3.png)
 
@@ -39,7 +39,7 @@ There are several columns that can be taken into account when to calculate the p
 Here, I have tried Multinomial Naive Bayes and Support Vector Machine (SVM), and interestingly enough, they demonstrated quite a different aspect. 
 
 ### Multinomial Naive Bayes
-
+The first machine learning model I tried for the classification is Multinomial Naive Bayes. 
 ![MultinomialNB_unigram](/images/multinomialNB_1gram.png)
 
 ### Support Vector Machine

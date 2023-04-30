@@ -43,7 +43,7 @@ The first machine learning model I tried for the classification is Multinomial N
 
 <img src="/images/multinomialNB_1gram.png"  width="430" height="360"> <img src="/images/multinomialNB_1gram2.png"  width="430" height="360">
 
-There is almost no difference at all in the case of unigram feature even though the max feature has been adjusted from 1500 to 3000. Both models labelled the majority of the talks as positive, which is not a surprise, considering the fact that the better part of the talks are already highly positively skewed. Since both models predicted that almost all of them are positively-rated talks, their performance does not show a big difference from the base line (69% and 70% respectively). Then I tried bigram feature, in the hope that giving more context by incorporating bigram feature would enhance its performance. The result is as below.
+There is almost no difference at all in the case of unigram feature even though the max feature has been adjusted from 1500 to 3000. Both models labelled the majority of the talks as positive, which is not a surprise, considering the fact that the better part of the talks are already highly positively skewed. Since both models predicted that almost all of them are positively-rated talks, their performance does not show a big difference from the base line (69% and 70% respectively). Then I tried bigram feature, in the hope that giving more context by incorporating bigram feature would enhance its performance. 
 
 ![MultinomialNB_unigram](/images/multinomialNB_ngram1.png)
 
@@ -51,12 +51,15 @@ After changing the unigram feature to bigram feature, the performance of the mod
 
 ### Support Vector Machine
 
-When testing Support Vector Machine model, I have adjusted both maximum feature numbers and C parameter since both have a heavy influence in its performance. However, in this project, the maximum feature number did not affect the performance significantly while C parameter did.
-
+When testing Support Vector Machine model, I have adjusted both maximum feature numbers and C parameter since both have a heavy influence in its performance. However, in this project, the maximum feature number did not affect the performance significantly while the C parameter did. 
 
 <img src="/images/SVM_1gram1.png"  width="430" height="360"> <img src="/images/SVM_1gram3.png"  width="430" height="360">
 
+The most imposing point in the figure above is the number of true negatives in each plot. When the margin was harder, the model classified true negatives more successfully than when the margin is softer. However, as a classifier, the model with harder margin is of no use in that its performance is even lower than the base line (63%). In the case of softer margin, the model performed slightly better than the base line (70%), but there is no significant difference in terms of performance between SVM and multinomial Native Bayes model. 
+
 ![SVM Ngram](/images/SVM_ngram.png)
+
+As a further research, I replaced unigram features to bigram/trigram features. I also increased the maximum feature number from 1500 to 15000 to make sure that the model uses trigram features, too. Discouragingly, even after changing both maximum feature number and linguistic feature, the performance remained almost the same as 69.7%. However, when comparing this model to Naive Bayes model, it still shows better performance in classifying true negatives, from which it can be concluded that SVM is a more sophisticated model than Naive Bayes. 
 
 
 ## Sub-hypothesis 1: the correlation between the k-band and the rating `obnoxious`

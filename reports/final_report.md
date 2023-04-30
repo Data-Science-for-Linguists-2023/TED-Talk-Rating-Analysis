@@ -76,7 +76,6 @@ For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `
 To my disappointment, the correlation between the k-band and the rating `obnoxious` was very low. The coefficient is .11, and the mean absolute error is 1.24, indicating that the model is off by 1.24 on average.
 
 ### 2: The correlation between the sentence length and the rating `longwinded`
-(350)
 
 The second hypothesis is also rejected, unfortunately. The coefficient of the model is .0013, which is even lower, and the mean absolute error is 1.71, indicating that the model is off by 1.71 on average.
 
@@ -97,5 +96,5 @@ Dataset collected:
 Rounak, B. (2017) *TED Talks.*  Retrieved from https://www.kaggle.com/datasets/rounakbanik/ted-talks
 
 count1w.txt file  
-Thorsten B. & Alex F.  (2008) *Google Web Trillion Word Corpus* Retrieved from https://norvig.com/ngrams/
+Thorsten B. & Alex F.  (2008) *Google Web Trillion Word Corpus.* Retrieved from https://norvig.com/ngrams/
 

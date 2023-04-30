@@ -90,9 +90,9 @@ I am glad that I was able to learn funtamental python packages such as *pandas*,
 
 ## Reference
 
-Dataset collected:
+Dataset collected:  
 Rounak, B. (2017) *TED Talks.*  Retrieved from https://www.kaggle.com/datasets/rounakbanik/ted-talks
 
-count1w.txt file 
+count1w.txt file  
 Thorsten B. & Alex F.  (2008) *Google Web Trillion Word Corpus* Retrieved from https://norvig.com/ngrams/
 

@@ -12,21 +12,21 @@ Soobin Choi | soc69@pitt.edu | 04/25/2023
 
 ## Introduction
 ### Motivation and hypotheses
-The motivation for this project is straightforward: since TED talk was one of the main sources I used to learn English, I became curious when I saw a project in Kaggle.com, titled [*What Makes a Popular TED Talk?*](https://www.kaggle.com/code/holfyuen/what-makes-a-popular-ted-talk) I realized that, without solid ground, I assumed that it is the lexical contents that attracts people, and that it is the main source which the speech gains popularity from. Therefore, taking this project as an opportunity to check if my hasty assumption is valid, I intend to discover ***whether it is possible to predict a talks popularity solely based on the lexical contents of it***. As the project proceeds, it also seemed interesting to check the correlation between specific ratings and a couple of textual features, hence two sub-hypotheses are added as below:
+The motivation for this project is straightforward: since TED talk was one of the main sources I used to learn English, I became curious when I saw a project in Kaggle.com, titled [*What Makes a Popular TED Talk?*](https://www.kaggle.com/code/holfyuen/what-makes-a-popular-ted-talk) I realized that, without solid ground, I assumed that it is the lexical contents that attract people, and that it is the main source which the speech gains popularity from. Therefore, taking this project as an opportunity to check if my hasty assumption is valid, I intend to discover ***whether it is possible to predict a talks popularity solely based on the lexical contents of it***. As the project proceeds, it also seemed interesting to check the correlation between specific ratings and a couple of textual features, hence two sub-hypotheses are added as below:
 
 * There is a positive correlation between the rating `obnoxious` and the mean of [k-band](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#what-is-k-band)
 
 * There is a positive correlation between the rating  `longwinded` and the mean length of sentence in the transcript
 
 #### What is **K-band**?
-K-band is one of the ways to measure the vocabulary level of a written language. Since common and everyday words are used more frequently than technical and sophisticated words, it is designed to measure the level of a word by its frequency. The k-band in this project is built on the unigram file (`enable1.txt`) collected by Google, the 1/3 million most frequent words on the platform. The unigram file can be found [in this website](https://norvig.com/ngrams/)
+K-band is one of the ways to measure the vocabulary level of a written language. Since common and everyday words are used more frequently than technical and sophisticated words, it is designed to measure the level of a word by its frequency. The K-band in this project is built on the unigram file (`enable1.txt`) collected by Google, the 1/3 million most frequent words on the platform. The unigram file can be found [on this website](https://norvig.com/ngrams/)
 
 
-### About the data
-For this project, I used two datasets from [Kaggle](https://www.kaggle.com/datasets/rounakbanik/ted-talks), which are [`ted_main.csv`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/data_sample/ted_main_sample.csv), [`transcript.csv`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/data_sample/transcript_sample.csv). `ted_main.csv` file contains the general information of each talk, such as the title, the number of comments, the ratings they recieved, the url, and so on. `transcript.csv` file contains only two columns, which are the url, and the transcript. For my project, I simply merged two datasets by `url` column, and started data cleaning process from here. In the merged file,  there are 2544 talks, with 2.3 millions of tokens in total.
+### About data
+For this project, I used two datasets from [Kaggle](https://www.kaggle.com/datasets/rounakbanik/ted-talks), which are [`ted_main.csv`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/data_sample/ted_main_sample.csv), [`transcript.csv`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/data_sample/transcript_sample.csv). `ted_main.csv` file contains the general information of each talk, such as the title, the number of comments, the ratings they received, the url, etc. `transcript.csv` file contains only two columns, which are the url, and the transcript. For my project, I simply merged two datasets by `url` column, and started the data cleaning process from here. In the merged file,  there are 2544 talks, with 2.3 million tokens in total.
 
 #### License
-Both datasets are under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/LICENSE.md#creative-commons-attribution-noncommercial-noderivatives-40-international-public-license).
+Both datasets are licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/LICENSE.md#creative-commons-attribution-noncommercial-noderivatives-40-international-public-license).
 
 
 ## Main Hypothesis: it is possible to predict the popularity of a talk based on its transcript
@@ -37,10 +37,10 @@ There are several columns that can be taken into account when to calculate the p
 
 *examples of ratings column, before cleaning and after cleaning*
 
-Here, I have tried Multinomial Naive Bayes model and Support Vector Machine (SVM), and interestingly enough, they demonstrated quite a different aspect. 
+In this case, I have tried a Multinomial Naive Bayes model and a Support Vector Machine (SVM), and it was interesting to find that both demonstrate quite different effects.
 
 ### Multinomial Naive Bayes
-The first machine learning model I tried for the classification is Multinomial Naive Bayes. I first have set `max feature` number as 1500, then increased to 3000 in the case of unigram feature. The results are as below.
+The first machine learning model I tried for classification was Multinomial Naive Bayes. I first set `max feature` number as 1500, then increased to 3000 in the case of unigram feature. The results are below.
 
 <img src="/images/multinomialNB_1gram.png"  width="430" height="360"> <img src="/images/multinomialNB_1gram2.png"  width="430" height="360">
 
@@ -65,7 +65,7 @@ Further research led me to replace unigram features with bigram/trigram features
 
 ## Sub-hypotheses 
 
-For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `longwinded` take up in each row in `rating` column. I used regression model when testifying the sub-hypotheses since both dependent and independent variables are continuous values.
+For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `longwinded` take up in each row in `rating` column. Due to the fact that both dependent and independent variables are continuous, I used a regression model to test the sub-hypotheses.
 
 ### 1: The correlation between the k-band and the rating `obnoxious`
 
@@ -86,7 +86,7 @@ This project aims to reveal the correlation between a talk's popularity and its 
 
 
 ## General thoughts regarding the project
-I am glad that I was able to learn funtamental python packages such as *pandas*, *numpy*, *matplotlib*. Even though my result is somewhat disappointing, I am still glad that I was able to push through and finish this project. I regretted that I did not put more effort when choosing the topic at the beginning of this project, but it is what it is. It was demanding, but it was so much fun. This project was a great opportunity to confirm that I do love this work and would like to pursue career in this field. I would like to say thank you to Dr. Han for giving me this valuable experience.
+I am glad that I was able to learn funtamental python packages such as *pandas*, *numpy*, *matplotlib*. Even though my result is somewhat disappointing, I am still glad that I was able to push through and finish this project. I regret that I did not put more effort into choosing the topic at the beginning of this project, but it is what it is. It was demanding, but it was so much fun. This project was a great opportunity to confirm that I do love this work and would like to pursue a career in this field. I would like to thank Dr. Han for giving me this valuable experience.
 
 
 ## Reference

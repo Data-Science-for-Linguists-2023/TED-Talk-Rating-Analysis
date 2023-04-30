@@ -1,5 +1,5 @@
 # Final Report: The application of text classification model to the public talk – TED Talk
-Soobin Choi | soc69@pitt.edu | 04/25/2023
+Soobin Choi | soc69@pitt.edu | 04/30/2023
 
 ### Table of contents
 * [Introduction](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#Introduction)

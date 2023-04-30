@@ -30,7 +30,7 @@ Both datasets are under a [Creative Commons Attribution-NonCommercial-NoDerivati
 
 ## Main Hypothesis: it is possible to predict the popularity of a talk based on its transcript
 
-There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. For this project, I only used `rating` column since this column provides more information about how the viewers think about the talk. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings. In the case of one neutral rating, I did not add it up to neither positive nor negative. After calculating the percentages, it shows that most of the talks are positively skewed. Therefore, I labelled the talks based on the percentage of negative ratings: if the percentage of negative ratings is higher than the mean of negative ratings percentage (8.12%), I labelled it as negative. Otherwise, I labelled it as positive. After finishing labeling, I calculated the base line, and it turned out to be 66%.
+There are several columns that can be taken into account when to calculate the popularity of a talk, which are `comment` column, `view` column, and `rating` column. The only column I used for this project was the `rating` column since it provides more information regarding the views of the viewers. There are 14 catetories in `ratings`, and nine of them are positive, four of them are negative, and one rating is neutral. Since each values in `rating` column is the total sum of each rating as below, I have calculated the percentage of positive/negative ratings. In the case of one neutral rating, I did not add it up to neither positive nor negative. After calculating the percentages, it shows that most of the talks are positively skewed. Therefore, I labelled the talks based on the percentage of negative ratings: if the percentage of negative ratings is higher than the mean of negative ratings percentage (8.12%), I labelled it as negative. Other than that, I labelled it as positive. After finishing labeling, I calculated the base line, and it turned out to be 66%.
 
 ![ratrings](/images/ratings.png) ![ratings2](/images/ratings3.png)
 
@@ -43,37 +43,36 @@ The first machine learning model I tried for the classification is Multinomial N
 
 <img src="/images/multinomialNB_1gram.png"  width="430" height="360"> <img src="/images/multinomialNB_1gram2.png"  width="430" height="360">
 
-There is almost no difference at all in the case of unigram feature even though the max feature has been adjusted from 1500 to 3000. Both models labelled the majority of the talks as positive, which is not a surprise, considering the fact that the better part of the talks are already highly positively skewed. Since both models predicted that almost all of them are positively-rated talks, their performance does not show a big difference from the base line (69% and 70% respectively). Then I tried bigram feature, in the hope that giving more context by incorporating bigram feature would enhance its performance. 
+There is almost no difference at all in the case of unigram feature even though the max feature has been adjusted from 1500 to 3000. Both models labelled the majority of the talks as positive, which is not a surprise, considering the fact that the better part of the talks are already highly positively skewed. Since both models predicted that almost all of them are positively-rated talks, their performance does not show a big difference from the base line (69% and 70% respectively). After that, I tried the bigram feature in the hope that by incorporating the bigram feature, it would be possible to enhance its performance.
 
 ![MultinomialNB_unigram](/images/multinomialNB_ngram1.png)
 
-After changing the unigram feature to bigram feature, the performance of the model actually deteriorated. When using unigram feature, the model classified three true negative talks successfully. However, after adding bigram feature and increase the maximum feature number to 20000, the model did not label any single true negative talks as negative - it classified all the talks as positive. I am not sure if this result is due to the increase in the maximum feature number or due to the bigram features, but what we can conclude from here is that it is not possible to predict the popularity of a talk based on its transcript in the case where multinomial Naive Bayes model is employed.
+After changing the unigram feature to bigram feature, the performance of the model actually deteriorated. When using unigram feature, the model classified three true negative talks successfully. Even so, after adding bigram to the model as well as increasing the maximum number of features to 20000, all true negatives were classified as positives by the model. I am not sure if this result is due to the increase in the maximum feature number or due to the bigram features, but what we can conclude from here is that it is not possible to predict the popularity of a talk based on its transcript in the case where multinomial Naive Bayes model is employed.
 
 ### Support Vector Machine
 
-When testing Support Vector Machine model, I have adjusted both maximum feature numbers and C parameter since both have a heavy influence in its performance. However, in this project, the maximum feature number did not affect the performance significantly while the C parameter did. 
+Since both maximum feature numbers and C parameter have a significant impact on the performance of Support Vector Machine models, I have adjusted both when testing the model. However, in this project, the maximum feature number did not affect the performance significantly while the C parameter did. 
 
 <img src="/images/SVM_1gram1.png"  width="430" height="360"> <img src="/images/SVM_1gram3.png"  width="430" height="360">
 
-The most imposing point in the figure above is the number of true negatives in each plot. When the margin was harder, the model classified true negatives more successfully than when the margin is softer. However, as a classifier, the model with harder margin is of no use in that its performance is even lower than the base line (63%). In the case of softer margin, the model performed slightly better than the base line (70%), but there is no significant difference in terms of performance between SVM and multinomial Native Bayes model. 
+The most striking point in the figure above is the number of true negatives in each plot. When the margin was harder, the model classified true negatives more successfully than when the margin is softer. However, as a classifier, the model with harder margin is of no use in that its performance is even lower than the base line (63%). In the case of softer margin, the model performed slightly better than the base line (70%), but there is no significant difference in terms of performance between SVM and multinomial Native Bayes model. 
 
 ![SVM Ngram](/images/SVM_ngram.png)
 
-As a further research, I replaced unigram features to bigram/trigram features. I also increased the maximum feature number from 1500 to 15000 to make sure that the model uses trigram features, too. Discouragingly, even after changing both maximum feature number and linguistic feature, the performance remained almost the same as 69.7%. However, when comparing this model to Naive Bayes model, it still shows better performance in classifying true negatives, from which it can be concluded that SVM is a more sophisticated model than Naive Bayes. 
+Further research led me to replace unigram features with bigram/trigram features as part of my study. I also increased the maximum feature number from 1500 to 15000 to make sure that the model uses trigram features, too. Discouragingly, even after changing both maximum feature number and linguistic feature, the performance remained almost the same as 69.7%. However, when comparing this model to Naive Bayes model, it still shows better performance in classifying true negatives, from which it can be concluded that SVM is a more sophisticated model than Naive Bayes. 
 
 
 ## Sub-hypotheses 
 
 For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `longwinded` take up in each row in `rating` column. I used regression when testifying the sub-hypotheses since both dependent variable and independent variable are continuous values.
 
-### 1: the correlation between the k-band and the rating `obnoxious`
-
-
+### 1: The correlation between the k-band and the rating `obnoxious`
 
 ![kband-obnoxious](/images/kband_obn.png)
 
+To my disappointment, the correlation between the k-band and the rating `obnoxious` was awfully low. The coefficient is .11, and the mean absolute error is 1.24, indicating that the model is off by 1.24 on average.
 
-### 2: the correlation between the sentence length and the rating `longwinded`
+### 2: The correlation between the sentence length and the rating `longwinded`
 (350)
 
 ![sentlen-longwinded](/images/sent_long.png)

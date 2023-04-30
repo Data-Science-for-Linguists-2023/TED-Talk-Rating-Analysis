@@ -87,7 +87,7 @@ This project aims to reveal the correlation between a talk's popularity and its 
 
 
 ## General thoughts regarding the project
-I am glad that I was able to learn funtamental python packages such as *pandas*, *numpy*, *matplotlib*. Even though my result is somewhat disappointing, I am still glad that I was able to push through and finish this project. I regret that I did not put more effort into choosing the topic at the beginning of this project, but it is what it is. It was demanding, but it was so much fun. This project was a great opportunity to confirm that I do love this work and would like to pursue a career in this field. I would like to thank Dr. Han for giving me this valuable experience.
+I am glad that I was able to learn funtamental python packages such as *pandas*, *numpy*, *matplotlib*. Even though my result is somewhat disappointing, I am still glad that I was able to push through and finish this project. I regret that I did not put more effort into choosing the topic at the beginning of this project, but it is what it is. Data processing part was demanding, but it was so much fun. This project was a great opportunity to confirm that I do love this work and would like to pursue a career in this field. I would like to thank Dr. Han for giving me this valuable experience.
 
 
 ## Reference

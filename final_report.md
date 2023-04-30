@@ -64,7 +64,7 @@ As a further research, I replaced unigram features to bigram/trigram features. I
 
 ## Sub-hypotheses 
 
-For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `longwinded` take up in each row in `rating` column.
+For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `longwinded` take up in each row in `rating` column. I used regression when testifying the sub-hypotheses since both dependent variable and independent variable are continuous values.
 
 ### 1: the correlation between the k-band and the rating `obnoxious`
 

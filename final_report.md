@@ -62,13 +62,18 @@ The most imposing point in the figure above is the number of true negatives in e
 As a further research, I replaced unigram features to bigram/trigram features. I also increased the maximum feature number from 1500 to 15000 to make sure that the model uses trigram features, too. Discouragingly, even after changing both maximum feature number and linguistic feature, the performance remained almost the same as 69.7%. However, when comparing this model to Naive Bayes model, it still shows better performance in classifying true negatives, from which it can be concluded that SVM is a more sophisticated model than Naive Bayes. 
 
 
-## Sub-hypothesis 1: the correlation between the k-band and the rating `obnoxious`
-(350)
+## Sub-hypotheses 
+
+For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `longwinded` take up in each row in `rating` column.
+
+### 1: the correlation between the k-band and the rating `obnoxious`
+
+
 
 ![kband-obnoxious](/images/kband_obn.png)
 
 
-## Sub-hypothesis 2: the correlatiob between the sentence length and the rating `longwinded`
+### 2: the correlation between the sentence length and the rating `longwinded`
 (350)
 
 ![sentlen-longwinded](/images/sent_long.png)

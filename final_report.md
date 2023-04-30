@@ -70,14 +70,19 @@ For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `
 
 ![kband-obnoxious](/images/kband_obn.png)
 
-To my disappointment, the correlation between the k-band and the rating `obnoxious` was awfully low. The coefficient is .11, and the mean absolute error is 1.24, indicating that the model is off by 1.24 on average.
+To my disappointment, the correlation between the k-band and the rating `obnoxious` was very low. The coefficient is .11, and the mean absolute error is 1.24, indicating that the model is off by 1.24 on average.
 
 ### 2: The correlation between the sentence length and the rating `longwinded`
 (350)
 
+The second hypothesis is also rejected, unfortunately. The coefficient of the model is .0013, which is even lower, and the mean absolute error is 1.71, indicating that the model is off by 1.71 on average.
+
 ![sentlen-longwinded](/images/sent_long.png)
 
 ## Conclusion
+
+This project aims to reveal the correlation between a talk's popularity and its lexical content. The main hypothesis tested was that it is possible to predict the popularity solely based on the talk's transcript. After testing two different models which are multinomial Naive Bayes and SVM, it is concluded that it is not possible to predict the talk's popularity purely based off of the lexical contents. Additionally, as a follow-up hypothesis, I explored the correlation between specific ratings (`obnoxious` and `longwinded`) and non-lexical features such as k-band and sentence length. Despite the higher hope in these follow-up hypotheses, the regression model proved them wrong. No correlation was found between certain ratings and non-lexical features.
+
 * What I have found
 * Future development regarding this data
 (200~300)

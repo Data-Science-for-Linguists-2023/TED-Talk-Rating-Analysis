@@ -7,7 +7,7 @@ Soobin Choi | soc69@pitt.edu | 04/25/2023
 * [Sub-hypothesis 1](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#sub-hypothesis-1-the-correlation-between-the-k-band-and-the-rating-obnoxious)
 * [Sun-hypothesis 2](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#sub-hypothesis-2-the-correlatiob-between-the-sentence-length-and-the-rating-longwinded)
 * [Conclusion](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#conclusion)
-* General thoughts I had during this project(https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#General-thoughts-regarding-the-project)
+* [General thoughts I had during this project](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#General-thoughts-regarding-the-project)
 
 ## Introduction
 ### Motivation and hypotheses

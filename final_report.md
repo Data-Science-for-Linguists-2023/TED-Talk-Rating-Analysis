@@ -64,7 +64,7 @@ Further research led me to replace unigram features with bigram/trigram features
 
 ## Sub-hypotheses 
 
-For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `longwinded` take up in each row in `rating` column. I used regression when testifying the sub-hypotheses since both dependent variable and independent variable are continuous values.
+For both sub-hypothesis, I have calculated the percentage that `obnoxious` and `longwinded` take up in each row in `rating` column. I used regression model when testifying the sub-hypotheses since both dependent and independent variables are continuous values.
 
 ### 1: The correlation between the k-band and the rating `obnoxious`
 
@@ -81,15 +81,18 @@ The second hypothesis is also rejected, unfortunately. The coefficient of the mo
 
 ## Conclusion
 
-This project aims to reveal the correlation between a talk's popularity and its lexical content. The main hypothesis tested was that it is possible to predict the popularity solely based on the talk's transcript. After testing two different models which are multinomial Naive Bayes and SVM, it is concluded that it is not possible to predict the talk's popularity purely based off of the lexical contents. Additionally, as a follow-up hypothesis, I explored the correlation between specific ratings (`obnoxious` and `longwinded`) and non-lexical features such as k-band and sentence length. Despite the higher hope in these follow-up hypotheses, the regression model proved them wrong. No correlation was found between certain ratings and non-lexical features.
-
-* What I have found
-* Future development regarding this data
-(200~300)
+This project aims to reveal the correlation between a talk's popularity and its lexical content. The main hypothesis tested was that it is possible to predict the popularity solely based on the talk's transcript. After testing two different models which are multinomial Naive Bayes and SVM, it is concluded that it is not possible to predict the talk's popularity purely based off of the lexical contents. Additionally, as a follow-up hypothesis, I explored the correlation between specific ratings (`obnoxious` and `longwinded`) and non-lexical features such as k-band and sentence length. Despite the higher hope in these follow-up hypotheses, the regression model proved them wrong. No correlation was found between certain ratings and non-lexical features. Having tested all the hypotheses, it can be concluded that there are other factors other than lexical contents that draw people's attention and play a role in gaining popularity beyond the lexical content.
 
 
 ## Have a paragraph devoted to the overall history and process of your project, warts and all. Document setbacks, false starts, and other difficulties you experienced.
+I am glad that I was able to learn funtamental python packages such as *pandas*, *numpy*, *matplotlib*. Even though my result is somewhat disappointing, I am still glad that I was able to push through and finish this project. I regretted that I did not put more effort when choosing the topic at the beginning of this project, but it is what it is. It was demanding, but it was so much fun. This project was a great opportunity to confirm that I do love this work and would like to pursue career in this field. I would like to say thank you to Dr. Han for giving me this valuable experience.
 
 
 ## Reference
-google k-band 잊지말기
+
+Dataset collected:
+Rounak, B. (2017) *TED Talks.*  Retrieved from https://www.kaggle.com/datasets/rounakbanik/ted-talks
+
+count1w.txt file 
+Thorsten B. & Alex F.  (2008) *Google Web Trillion Word Corpus* Retrieved from https://norvig.com/ngrams/
+

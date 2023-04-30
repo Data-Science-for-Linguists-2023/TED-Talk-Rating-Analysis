@@ -7,7 +7,7 @@ Soobin Choi | soc69@pitt.edu | 04/25/2023
 * [Sub-hypothesis 1](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#sub-hypothesis-1-the-correlation-between-the-k-band-and-the-rating-obnoxious)
 * [Sun-hypothesis 2](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#sub-hypothesis-2-the-correlatiob-between-the-sentence-length-and-the-rating-longwinded)
 * [Conclusion](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#conclusion)
-* General thoughts I had during this project
+* General thoughts I had during this project(https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_report.md#General-thoughts-regarding-the-project)
 
 ## Introduction
 ### Motivation and hypotheses
@@ -84,7 +84,7 @@ The second hypothesis is also rejected, unfortunately. The coefficient of the mo
 This project aims to reveal the correlation between a talk's popularity and its lexical content. The main hypothesis tested was that it is possible to predict the popularity solely based on the talk's transcript. After testing two different models which are multinomial Naive Bayes and SVM, it is concluded that it is not possible to predict the talk's popularity purely based off of the lexical contents. Additionally, as a follow-up hypothesis, I explored the correlation between specific ratings (`obnoxious` and `longwinded`) and non-lexical features such as k-band and sentence length. Despite the higher hope in these follow-up hypotheses, the regression model proved them wrong. No correlation was found between certain ratings and non-lexical features. Having tested all the hypotheses, it can be concluded that there are other factors other than lexical contents that draw people's attention and play a role in gaining popularity beyond the lexical content.
 
 
-## Have a paragraph devoted to the overall history and process of your project, warts and all. Document setbacks, false starts, and other difficulties you experienced.
+## General thoughts regarding the project
 I am glad that I was able to learn funtamental python packages such as *pandas*, *numpy*, *matplotlib*. Even though my result is somewhat disappointing, I am still glad that I was able to push through and finish this project. I regretted that I did not put more effort when choosing the topic at the beginning of this project, but it is what it is. It was demanding, but it was so much fun. This project was a great opportunity to confirm that I do love this work and would like to pursue career in this field. I would like to say thank you to Dr. Han for giving me this valuable experience.
 
 

@@ -7,7 +7,7 @@ This project reveals the relationship between the popularity of a talk and its t
 
 ## Directory
 
-[**`Final Report`**](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/final_paper.md) is the wrapped-up version of the project
+[**`Final Report`**](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/reports/final_paper.md) is the wrapped-up version of the project
 
 [`Ted_talk_DataCleaning`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/code/TED_talk_DataCleaning.ipynb) is where I cleaned the data and extracted the information I need. 
 

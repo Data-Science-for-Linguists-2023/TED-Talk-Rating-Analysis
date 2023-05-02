@@ -7,7 +7,7 @@ This project reveals the relationship between the popularity of a talk and its t
 
 ## Directory
 
-[**`Final Report`**](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/reports/final_paper.md) is the wrapped-up version of the project
+[**`Final Report`**](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/reports/final_report.md) is the wrapped-up version of the project
 
 [`Ted_talk_DataCleaning`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/code/TED_talk_DataCleaning.ipynb) is where I cleaned the data and extracted the information I need. 
 
@@ -17,9 +17,9 @@ This project reveals the relationship between the popularity of a talk and its t
 
 [`LICENSE.md`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/LICENSE.md) contains license information of both the data sets and my jupyter notebook files.
 
-[`project_plan.md`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/project_plan.md) contains the initial purpose/start point of this whole project.
+[`project_plan.md`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/reports/project_plan.md) contains the initial purpose/start point of this whole project.
 
-[`project_progress.md`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/progress_report.md) contains the three milestones and each milestone explains what kind of progress I have made.
+[`project_progress.md`](https://github.com/Data-Science-for-Linguists-2023/TED-Talk-Rating-Analysis/blob/main/reports/progress_report.md) contains the three milestones and each milestone explains what kind of progress I have made.
 
 
 
